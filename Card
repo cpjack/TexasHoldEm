@@ -1,0 +1,51 @@
+public class Card
+{
+  
+//Local Variables:
+  String rank;
+  String suit;
+  int pointValue;
+  
+// Constructor to make a default card.
+public Card()
+  {
+  String rank = "Ace";
+  String suit = "Spades"
+  pointValue = 14;
+  }
+ 
+//Constructor to make a specific card.
+public Card(String r, String s, int pV)
+  {
+  rank = r;
+  suit = s;
+  pointValue = pV;
+  }
+ 
+//Returns rank
+public String getRank()
+{
+  return rank;
+}
+ 
+//Returns suit
+public String getSuit()
+{
+  return suit;
+}
+ 
+//Returns pointValue
+public int getPointValue()
+{
+  return pointValue;
+}
+ 
+//Print card to a line.
+public String toString()
+{
+  String verdict = "";
+  verdict = rank +" of " + suit" [" +pointValue +"]";
+  return verdict;
+}
+ 
+}
